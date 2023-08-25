@@ -1,0 +1,48 @@
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
+import Onboarding from './screens/Onboarding'
+import LittleLemonHeader from './screens/LittleLemonHeader'
+
+
+// Login Screen test 
+export default function App() {
+  return (
+    <View 
+    style={appStyles.container}>
+            <LittleLemonHeader />
+      <Onboarding />
+    </View>
+    
+  )
+}
+
+
+
+const appStyles = StyleSheet.create ({
+  container: {
+    flex: 1,
+    backgroundColor: 'azure', 
+  },
+  header:{
+
+  },
+  footer:{
+    backgroundColor: '#495E57',
+  },
+  button: {
+    fontSize: 22,
+    padding: 10,
+    marginVertical: 8,
+    margin: 40, 
+    backgroundColor: '#EDEFEE',
+    borderColor: '#EDEFEE',
+    borderWidth: 2,
+    borderRadius: 12
+  },
+  buttonText: {
+    color: '#333333',
+    textAlign: 'center',
+    fontSize: 32,
+  }
+
+})
